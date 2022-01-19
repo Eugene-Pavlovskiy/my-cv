@@ -6,15 +6,17 @@
     <title>My CV</title>
     <link rel="stylesheet" href="./styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:300,400,500,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   </head>
   <body>
 
     <section  id="container">
-      <header class="main bg-grid">
+      <header class="main">
         <div id="logo">
           <h2 class="name">Eugene Pavlovskiy</h2>
           <h4 class="profession">Front-End Developer</h4>
@@ -41,35 +43,31 @@
                   <li><img class="my-foto" src="./img/portfolio.jpg" alt="My Foto" /></li>
                 </ul>
               </div>
-              <h1>Eugene Pavlovskiy</h1>
+              <h1>EUGEN PAVLOVSKIY</h1>
               <h3>Front-End Developer</h3>
               <br>
               <p class="description">
-                I am a UX / UI designer. I like to embody ideas by creating sites
+                I am a Front-End Developer. I like to embody ideas by creating sites
                 that will be as convenient as possible and without unnecessary
                 information. Creating websites for me is a hobby, and design is
                 intuitive for me. Over the course of three years, he has carried out
                 various projects that still operate. Create a unique website,
-                landing page, presentation, redesign - go ahead - I'm ready!
+                landing page, presentation - go ahead - I'm ready!
               </p>    
             </div>
 
             <ul class="personal-info">
-              <li><label for="">Name</label><span>Eugene Pavlovskiy</span></li>
+              <li><label for="">Name:&nbsp;</label><span>Eugene Pavlovskiy</span></li>
 
-              <li><label for="">Birthday</label><span>Fabruary 20, 1982</span></li>
+              <li><label for="">Address:&nbsp;</label><span>Ukraine, Kyiv</span></li>
 
-              <li><label for="">Address</label><span>Ukraine, Kyiv</span></li>
-
-              <li><label for="">Email</label><span><a class="contacts-link" href="mailto:infopavlovskiy@gmail.com"
+              <li><label for="">Email:&nbsp;</label><span><a class="contacts-link" href="mailto:infopavlovskiy@gmail.com"
                 >infopavlovskiy@gmail.com</a
               ></span></li>
 
-              <li><label for="">Phone</label><span><a class="contacts-link" href="tel:+380962366807"
+              <li><label for="">Phone:&nbsp;</label><span><a class="contacts-link" href="tel:+380962366807"
                 >+38 096 236 68 07</a
               ></span></li>
-
-              <li><label for="">Website</label><span>Eugene Pavlovskiy</span></li>
             </ul>
           </div>
 
@@ -105,38 +103,123 @@
             </ul>
           </nav>
 
-          <section id="profile">    
+          <!-- <section id="profile">    
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vero.</p>
-          </section>
+          </section> -->
 
           <section id="resume">
-                <!-- Tech Skills Container -->
-                <div class="tech-scills-container">
-                  <h3 class="tech-scills-title">Tech Skills</h3>
-                  <ul>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">HTML5</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">CSS3</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">GIT</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">WebPack</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">JavaScript</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">React.js</span>
-                    </li>
-                    <li class="tech-scills-item">
-                      <span class="tech-scills-text">Node.js</span>
-                    </li>
-                  </ul>
-                </div>
+                <div class="timeline-section">
+                  <div class="main-wrapper-resume">
+                    <div class="carttitle-wrapper">
+                      <div class="color-box">
+                        <button id="red-color" class="btn-style"></button>
+                        <button id="yellow-color" class="btn-style"></button>
+                        <button id="setting-icon">
+                          <i class="fa fa-cog fa-spin"></i>
+                        </button>
+                      </div>
+
+                      <div class="container no-padding">
+                        <div class="row no-margin">
+                          <div class="col-md-6 no-padding bg-color-left">
+
+                            <div class="left-name bg-color-1">
+                              <h2>EUGEN <span class="text-color">PAVLOVSKIY</span></h2>
+                              <h5>Front-End Developer</h5>
+                              <p class="description">
+                                I am a Front-End Developer. I like to embody ideas by creating sites
+                                that will be as convenient as possible and without unnecessary
+                                information. Creating websites for me is a hobby, and design is
+                                intuitive for me. Over the course of three years, he has carried out
+                                various projects that still operate. Create a unique website,
+                                landing page, presentation - go ahead - I'm ready!
+                              </p>
+                            </div>
+
+                            <div class="left-adress">
+                              <ul>
+                                <li><span class="text-color">Phone no</span>+38 066 450 55 80</li>
+                                <li><span class="text-color">Address</span>Ukraine, Kyiv</li>
+                                <li><span class="text-color">Email</span>infopavlovskiy@gmail.com</li>
+                              </ul>
+                            </div>
+
+                            <div class="ex-heading">
+                              <h2>Work Experience</h2>
+                            </div>
+
+                            <div class="ex-box">
+                              <h2>November 2019 - up to now | Ukraine</h2>
+                              <h4 class="profession-title">
+                                Front-End Developer
+                                <span class="profession-company">Freelance</span>
+                              </h4>
+                          
+                              <p class="profession-duties-item">
+                                A complete set of technical skills in HTML, CSS and JavaScript.<br>
+                                Personal efficiency and effective communication in the project team.<br>
+                                Development Automation. Node.js and the npm package manager. Configure Gulp.<br>
+                              </p>
+                            </div>
+
+                            <div class="ex-box">
+                              <h2>June 2019 - October 2019 | Ukraine</h2>
+                              <h4 class="profession-title">
+                                Project Manager in Seorange Web Studio
+                                <span class="profession-company">Freelance</span>
+                              </h4>
+                          
+                              <p class="profession-duties-item">
+                                Working with existing customers and getting new ones.<br>
+                                Searching for clients for website development on CMS Opencart and low maintenance and maintenance.<br>
+                                Website development, landing pages on Wordpress<br>
+                                Maintaining and developing a web studio website on CMS Wordpress.<br>
+                              </p>
+                            </div>
+
+                            <div class="ex-box">
+                              <h2>November 2019 - up to now | Ukraine</h2>
+                              <h4 class="profession-title">
+                                Front-End Developer
+                                <span class="profession-company">Freelance</span>
+                              </h4>
+                          
+                              <p class="profession-duties-item">
+                                A complete set of technical skills in HTML, CSS and JavaScript.<br>
+                                Personal efficiency and effective communication in the project team.<br>
+                                Development Automation. Node.js and the npm package manager. Configure Gulp.<br>
+                              </p>
+                            </div>
+
+                          </div>
+
+                          <div class="col-md-6 no-padding bg-color-right">
+                            <div class="tech-scills-container">
+                              <h3 class="tech-scills-title">Tech Skills</h3>
+                              <ul>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">HTML5</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">CSS3</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">GIT</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">WebPack</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">JavaScript</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">React.js</span>
+                                </li>
+                                <li class="tech-scills-item">
+                                  <span class="tech-scills-text">Node.js</span>
+                                </li>
+                              </ul>
+                            </div>
 
                 <!-- Soft Skills Container -->
                 <div class="soft-skills-container">
@@ -158,102 +241,8 @@
                 </div>
               </aside>
 
-              <!-- Work Experience -->
-              <div>
-                <h3 class="about-me-title">Work Experience</h3>
-
-                <!-- Company 1 -->
-                <div>
-                  <h4 class="profession-title">
-                    Front-End Developer
-                    <span class="profession-company">Freelance</span>
-                  </h4>
-                  <span class="profession-time"
-                    >November 2019 - up to now
-                    <span class="profession-devided">|</span> Ukraine</span
-                  >
-
-                  <ul class="profession-duties">
-                    <li class="profession-duties-item">
-                      A complete set of technical skills in HTML, CSS and JavaScript.
-                    </li>
-                    <li class="profession-duties-item">
-                      Personal efficiency and effective communication in the project
-                      team.
-                    </li>
-                    <li class="profession-duties-item">Specialized IT English.</li>
-                    <li class="profession-duties-item">
-                      Development Automation. Node.js and the npm package manager.
-                      Configure Gulp.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Company 2 -->
-                <div>
-                  <h4 class="profession-title">
-                    Project Manager in
-                    <span class="profession-company">Seorange Web Studio</span>
-                  </h4>
-                  <span class="profession-time"
-                    >June 2019 - October 2019
-                    <span class="profession-devided">|</span> Ukraine</span
-                  >
-
-                  <ul class="profession-duties">
-                    <li class="profession-duties-item">
-                      Working with existing customers and getting new ones.
-                    </li>
-                    <li class="profession-duties-item">
-                      Searching for clients for website development on CMS Opencart
-                      and low maintenance and maintenance.
-                    </li>
-                    <li class="profession-duties-item">
-                      Website development, landing pages on Wordpress
-                    </li>
-                    <li class="profession-duties-item">
-                      Maintaining and developing a web studio website on CMS
-                      Wordpress.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Company 3 -->
-                <div>
-                  <h4 class="profession-title">
-                    Project Manager in
-                    <span class="profession-company">Grand Tandyr LLC</span>
-                  </h4>
-                  <span class="profession-time"
-                    >January 2016 - October 2018
-                    <span class="profession-devided">|</span> Ukraine</span
-                  >
-
-                  <ul class="profession-duties">
-                    <li class="profession-duties-item">
-                      Internet Marketing, Company branding.
-                    </li>
-                    <li class="profession-duties-item">
-                      Sales on-line and off-line, Sales by phone, messenger.
-                    </li>
-                    <li class="profession-duties-item">
-                      Building a dealer network, Work with a retail client, Work with
-                      dealers and wholesalers.
-                    </li>
-                    <li class="profession-duties-item">
-                      Development of the company’s site and its implementation on the
-                      platform of the site designer and further upgrade.
-                    </li>
-                    <li class="profession-duties-item">
-                      My contribution to this company allowed it to quickly and
-                      efficiently enter the Ukrainian market and become one of the
-                      market leaders in the production of ceramic tandoor furnaces, as
-                      well as gain confidence outside Ukraine from international
-                      representatives of the company.
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              
+              
 
               <!-- Education -->
               <div class="education-container">
@@ -273,6 +262,14 @@
                   >
                 </div>
               </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
           </section>    
 
               
