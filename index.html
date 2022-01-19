@@ -22,7 +22,8 @@
           <h4 class="profession">Front-End Developer</h4>
         </div>
 
-        <div class="social-icons-container">
+        <!-- <div class="overlay"></div> -->
+        <div class="share">
           <span class="social-text">
             <button class="pulse-button">
               <i class="fa fa-share"></i>
@@ -30,21 +31,30 @@
           </span>
 
           <ul class="socialicons">
-            <li><a href="https://www.facebook.com/pavlovskiyeugene"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/eugene-pavlovskiy"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="share facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&source=LinkedIn.com&title=<?php the_title(); ?>" class="share linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
           </ul>
+
+          <!-- <div class="color-box">
+            <button id="red-color" class="btn-style"></button>
+            <button id="yellow-color" class="btn-style"></button>
+            <button id="setting-icon">
+              <i class="fa fa-cog fa-spin"></i>
+            </button>
+          </div> -->
         </div>
+        
       </header>
       <section id="content">
           <div id="profile">
             <div class="about">
               <div class="photo-inner">
-                <ul>
-                  <li><img class="my-foto" src="./img/portfolio.jpg" alt="My Foto" /></li>
-                </ul>
+                <img class="my-foto" src="./img/portfolio.jpg" alt="My Foto" />
               </div>
-              <h1>EUGEN PAVLOVSKIY</h1>
-              <h3>Front-End Developer</h3>
+              <div class="about__title">
+                <h1>EUGEN PAVLOVSKIY</h1>
+                <h3>Front-End Developer</h3>
+              </div>
               <br>
               <p class="description">
                 I am a Front-End Developer. I like to embody ideas by creating sites
@@ -111,14 +121,6 @@
                 <div class="timeline-section">
                   <div class="main-wrapper-resume">
                     <div class="carttitle-wrapper">
-                      <div class="color-box">
-                        <button id="red-color" class="btn-style"></button>
-                        <button id="yellow-color" class="btn-style"></button>
-                        <button id="setting-icon">
-                          <i class="fa fa-cog fa-spin"></i>
-                        </button>
-                      </div>
-
                       <div class="container no-padding">
                         <div class="row no-margin">
                           <div class="col-md-6 no-padding bg-color-left">
@@ -221,47 +223,40 @@
                               </ul>
                             </div>
 
-                <!-- Soft Skills Container -->
-                <div class="soft-skills-container">
-                  <h3 class="soft-skills-title">Soft Skills</h3>
-                  <ul>
-                    <li class="soft-scills-item">
-                      <span class="soft-scills-text">Scrum</span>
-                    </li>
-                    <li class="soft-scills-item">
-                      <span class="tech-scills-text">Agile</span>
-                    </li>
-                    <li class="soft-scills-item">
-                      <span class="soft-scills-text">GTD</span>
-                    </li>
-                    <li class="soft-scills-item">
-                      <span class="soft-scills-text">Teamwork</span>
-                    </li>
-                  </ul>
-                </div>
-              </aside>
+                
+                            <div class="soft-skills-container">
+                              <h3 class="soft-skills-title">Soft Skills</h3>
+                              <ul>
+                                <li class="soft-scills-item">
+                                  <span class="soft-scills-text">Scrum</span>
+                                </li>
+                                <li class="soft-scills-item">
+                                  <span class="tech-scills-text">Agile</span>
+                                </li>
+                                <li class="soft-scills-item">
+                                  <span class="soft-scills-text">GTD</span>
+                                </li>
+                                <li class="soft-scills-item">
+                                  <span class="soft-scills-text">Teamwork</span>
+                                </li>
+                              </ul>
+                            </div>
 
-              
-              
-
-              <!-- Education -->
-              <div class="education-container">
-                <h3 class="about-me-title">Education</h3>
-
-                <!-- Highschool -->
-                <div>
-                  <h4 class="profession-title">
-                    <span class="profession-company"
-                      >Kharkiv National University of Radioelectronics</span
-                    >
-                  </h4>
-                  <h5>Management</h5>
-                  <span class="profession-time"
-                    >Septermber 1997 - June 2001
-                    <span class="profession-devided">|</span> Ukraine</span
-                  >
-                </div>
-              </div>
+                            <div class="education-container">
+                              <h3 class="about-me-title">Education</h3>
+                              <div>
+                                <h4 class="profession-title">
+                                  <span class="profession-company"
+                                    >Kharkiv National University of Radioelectronics</span
+                                  >
+                                </h4>
+                                <h5>Management</h5>
+                                <span class="profession-time"
+                                  >Septermber 1997 - June 2001
+                                  <span class="profession-devided">|</span> Ukraine</span
+                                >
+                              </div>
+                            </div>
                           </div>
 
                         </div>
@@ -280,8 +275,8 @@
 
                 <ol>
                   <li class="projects-item">
-                    <a class="projects-link" href="https://lovecamp.allinsol.com/">
-                      https://lovecamp.allinsol.com/</a
+                    <a class="projects-link" href="https://eugene-pavlovskiy.github.io/fullpage-website/#section2">
+                      https://eugene-pavlovskiy.github.io/fullpage-website/#section2</a
                     >
                     <span class="dots">.......................</span>
                     <span
@@ -291,8 +286,30 @@
                   </li>
 
                   <li class="projects-item">
-                    <a class="projects-link" href="https://cryptohub.goit.ua/"
-                      >https://cryptohub.goit.ua/</a
+                    <a class="projects-link" href="https://eugene-pavlovskiy.github.io/traveltours-site/">
+                      https://eugene-pavlovskiy.github.io/traveltours-site/</a
+                    >
+                    <span class="dots">.......................</span>
+                    <span
+                      ><b>[</b> <span class="tech-name">HTML5, CSS3</span>
+                      <b>]</b></span
+                    >
+                  </li>
+
+                  <li class="projects-item">
+                    <a class="projects-link" href="https://eugene-pavlovskiy.github.io/goit-js-hw-10-food-service-full-version/">
+                      https://eugene-pavlovskiy.github.io/goit-js-hw-10-food-service-full-version/</a
+                    >
+                    <span class="dots">.......................</span>
+                    <span
+                      ><b>[</b> <span class="tech-name">HTML5, CSS3</span>
+                      <b>]</b></span
+                    >
+                  </li>
+
+                  <li class="projects-item">
+                    <a class="projects-link" href="https://caraset.github.io/filmoteka//"
+                      >https://caraset.github.io/filmoteka/</a
                     >
                     <span class="dots">................................</span>
                     <span
@@ -302,8 +319,8 @@
                   </li>
 
                   <li class="projects-item">
-                    <a class="projects-link" href="https://kidslike.goit.co.ua/"
-                      >https://kidslike.goit.co.ua/</a
+                    <a class="projects-link" href="https://eugene-pavlovskiy.github.io/goit-markup-hw-08/portfolio.html"
+                      >https://eugene-pavlovskiy.github.io/goit-markup-hw-08/portfolio.html</a
                     >
                     <span class="dots">................................</span>
                     <span
