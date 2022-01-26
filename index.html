@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -17,12 +14,6 @@
 
     <section  id="container">
       <header class="main">
-        <div id="logo">
-          <h2 class="name">Eugene Pavlovskiy</h2>
-          <h4 class="profession">Front-End Developer</h4>
-        </div>
-
-        <!-- <div class="overlay"></div> -->
         <div class="share">
           <span class="social-text">
             <button class="pulse-button">
@@ -31,20 +22,25 @@
           </span>
 
           <ul class="socialicons">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="share facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&source=LinkedIn.com&title=<?php the_title(); ?>" class="share linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li>
+              <a href="https://www.facebook.com/" class="share facebook" target="_blank">
+                <i class='bx bxl-facebook-square icon' ></i>
+              </a>
+          </li>
+            <li>
+              <a href="http://www.linkedin.com/" class="share linkedin" target="_blank">
+                <i class='bx bxl-linkedin-square icon' ></i>
+              </a>
+            </li>
           </ul>
-
-          <!-- <div class="color-box">
-            <button id="red-color" class="btn-style"></button>
-            <button id="yellow-color" class="btn-style"></button>
-            <button id="setting-icon">
-              <i class="fa fa-cog fa-spin"></i>
-            </button>
-          </div> -->
         </div>
-        
+
+        <div class="logo" id="logo">
+          <h2 class="name">Eugene Pavlovskiy</h2>
+          <h4 class="profession">Front-End Developer</h4>
+        </div>
       </header>
+      
       <section id="content">
           <div id="profile">
             <div class="about">
@@ -57,26 +53,21 @@
               </div>
               <br>
               <p class="description">
-                I am a Front-End Developer. I like to embody ideas by creating sites
-                that will be as convenient as possible and without unnecessary
-                information. Creating websites for me is a hobby, and design is
-                intuitive for me. Over the course of three years, he has carried out
-                various projects that still operate. Create a unique website,
-                landing page, presentation - go ahead - I'm ready!
+                I am a Junior Front-End Developer looking for a full-time work and remote.<br> 
+                I focus on HTML5, CSS3, JS, React. English — B1 (Pre-Intermediate English).
+                Interested to grow in Front-End technologies working with modern projects.
               </p>    
             </div>
 
             <ul class="personal-info">
-              <li><label for="">Name:&nbsp;</label><span>Eugene Pavlovskiy</span></li>
-
               <li><label for="">Address:&nbsp;</label><span>Ukraine, Kyiv</span></li>
 
               <li><label for="">Email:&nbsp;</label><span><a class="contacts-link" href="mailto:infopavlovskiy@gmail.com"
                 >infopavlovskiy@gmail.com</a
               ></span></li>
 
-              <li><label for="">Phone:&nbsp;</label><span><a class="contacts-link" href="tel:+380962366807"
-                >+38 096 236 68 07</a
+              <li><label for="">Phone:&nbsp;</label><span><a class="contacts-link" href="tel:+380664505580"
+                >+38 066 450 55 80</a
               ></span></li>
             </ul>
           </div>
@@ -113,10 +104,6 @@
             </ul>
           </nav>
 
-          <!-- <section id="profile">    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vero.</p>
-          </section> -->
-
           <section id="resume">
                 <div class="timeline-section">
                   <div class="main-wrapper-resume">
@@ -128,7 +115,7 @@
                             <div class="left-name bg-color-1">
                               <h2>EUGEN <span class="text-color">PAVLOVSKIY</span></h2>
                               <h5>Front-End Developer</h5>
-                              <p class="description">
+                              <p class="left-name__description">
                                 I am a Front-End Developer. I like to embody ideas by creating sites
                                 that will be as convenient as possible and without unnecessary
                                 information. Creating websites for me is a hobby, and design is
@@ -353,9 +340,9 @@
           </section>
       </section>
 
-      <footer>
-        <div class="copyright">Copyright &copy; 2022 E.Pavlovskiy</div>
-      </footer>
+      <!-- <footer>
+        <div class="copyright">Copyright &copy; 2022 Pavlovskiy</div>
+      </footer> -->
 
     </section>
 
